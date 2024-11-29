@@ -1,0 +1,415 @@
+@import url('https://fonts.googlepis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+header {
+  padding: 40px 50px;
+  flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.logo{
+  font-size: 2rem;
+  color: #292725 ;
+  cursor: default;
+}
+
+
+
+.navigation {
+  margin-left: -750px;
+  
+  }
+
+
+.navigation a {
+  font-size: 1.1rem;
+  color: #292725;
+  text-decoration: none;
+  margin-right: 30px;
+  font-weight: bold; 
+  transition: .3s;
+  
+}
+
+.navigation a:hover {
+color: #eaccb6;
+}
+
+.btn-talk {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #292725;
+  border-radius: 5px;
+  border: 2px solid #473f35;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.btn-talk:hover {
+  color: #473f35;
+  background: transparent;
+
+}
+
+.home{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('Bild.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 30px 100px;
+
+}
+
+.content {
+  font-weight: medium;
+  max-width: 300px;
+  color: #292725;
+}
+
+.content h2{
+  font-size: 2.5rem;
+}
+
+.content h2 span {
+  font-size: 2.6rem;
+  color: #e4e4e4;
+  padding: 10px 0 40px 0;
+}
+
+
+
+.content h4 {
+  font-size: 1.5rem;
+ 
+}
+
+.content p {
+  padding: 10px 0 40px 0;
+}
+
+.btn-group a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #292725 ;
+  border-radius: 5px;
+  border: 2px solid #473f35;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.btn-group a:hover:nth-child(1) {
+  color: #473f35;
+  background: transparent;
+}
+
+.btn-group a:nth-child(2) {
+  color: #ffffff;
+  background: transparent;
+  margin-left: 10px;
+  padding: 10px 20px;
+
+}
+
+
+.btn-group a:hover:nth-child(2) {
+  color: #fff;
+  background: #292725;
+}
+
+.social-icons{
+  position: absolute ;
+  bottom: 50px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #292725;
+  border-radius: 50%;
+  margin-right: 22px;
+  text-align: center;
+  line-height: 37px;
+  border: 1px solid #ffffff;
+  outline: 2px solid #473f35;
+  transition: .3s;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+}
+
+.social-icons a i {
+  color: #fff;
+}
+
+
+
+
+
+
+.about-me {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  background: #ffffff;
+  box-sizing: border-box;
+
+}
+
+.about {
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+
+}
+
+.pic {
+  height: auto;
+    width: 100%; /* Gör bilden responsiv */
+    max-width: 400px; /* Begränsa maxbredd */
+    border-radius: 300px; /* Rundade hörn för en proffsig känsla */
+    margin-bottom: 15px; /* Avstånd mellan bild och text */
+ 
+  }
+
+
+.text {
+  width: 540px;
+}
+
+.text h2 {
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+
+.text h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+
+}
+
+span {
+  color: #736659;
+
+}
+.text p {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.link {
+  margin-top: 30px;
+
+}
+
+.hire {
+  text-decoration: none;
+  font-family: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: #292725;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  transition: 0.5s;
+  border: 2px solid #473f35;
+}
+
+.hire:hover:nth-child(1) {
+  color: #473f35;
+  background: transparent;
+}
+
+.hire:hover {
+  background: transparent;
+}
+
+
+ 
+  
+  
+
+
+@media (max-width: 768px) {
+
+
+  header {
+    flex-direction: column;
+    padding: 15px 20px;
+    flex-direction: row;
+      justify-content: space-between;
+  }
+  
+  .logo {
+    margin-bottom: 10px;
+    font-size: 1.8rem; 
+  }
+  
+  .navigation {
+    margin: 0; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+  }
+  
+  
+  .navigation a {
+    margin: 0 7px; 
+  
+  }
+  
+  .home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('Bild.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    
+   
+  }
+
+
+  .content h2 {
+    font-size: 2rem;
+    
+  }
+
+  .content h4 {
+    font-size: 1.2rem;
+  }
+  
+  .social-icons {
+    bottom: 20px;
+  }
+
+
+h1, h2 {
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 10px;
+  color: #292725;
+}
+
+
+
+
+
+.icon {
+  font-size: 2rem; /* Minska ikonstorleken om den tar för mycket plats */
+}
+.card {
+  font-size: 0.9rem; /* Gör texten mindre */
+}
+
+h1 {
+  font-size: 1.5rem; /* Anpassa huvudrubrikens storlek */
+}
+
+p {
+  font-size: 0.8rem; /* Minska brödtextens storlek */
+}
+
+
+
+
+.about-me {
+  padding: 70px;  /* Minska padding för att utnyttja skärmens utrymme */
+  display:flex;  /* Flexbox för att centrera innehållet */
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;  /* Täcker hela höjden av skärmen */
+  min-width:50cap
+   
+   
+}
+
+.about {
+  flex-direction: column;  /* Stapla bild och text vertikalt */
+  text-align: center;  /* Centrera texten */
+  
+}
+
+.pic {
+  width: 70%;  /* Anpassa bildens bredd */
+  max-width: 250px;  /* Begränsa maxstorleken */
+  margin-bottom: 20px;  /* Lägg till lite avstånd under bilden */
+}
+
+.text h2 {
+  font-size: 48px;  /* Anpassa huvudrubrikens storlek */
+  margin-bottom: 10px;
+}
+
+.text h5 {
+  font-size: 16px;  /* Anpassa underrubrikens storlek */
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 14px;  /* Minska textstorleken */
+  line-height: 1.6;  /* Behåll bra läsbarhet */
+  max-width: 60%;  /* Begränsa textens bredd */
+  margin: 0 auto 20px;  /* Centrera texten och lägg till marginal nedåt */
+}
+
+.link .hire {
+  padding: 12px 24px;  /* Anpassa knappens storlek */
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 10px;  /* Lägg till lite avstånd ovanför knappen */
+}
+.social-icons {
+  display: flex;             /* Flexbox-layout för att placera ikoner i en rad */
+  justify-content: center;   /* Centrera ikonerna horisontellt */
+  gap: 10px;                 /* Mellanrum mellan ikoner */
+  padding: -150px;           /* Lite padding ovanför och under ikonerna */
+  margin-bottom: -100px;
+  margin-left: 20px;
+}
+}
