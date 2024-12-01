@@ -1,0 +1,349 @@
+@import url('https://fonts.googlepis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  header {
+    padding: 40px 50px;
+    flex-direction: row;
+      justify-content: space-between;
+  }
+  
+  
+  .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #292725 ;
+    cursor: default;
+  }
+  
+  
+  
+  .navigation {
+    margin-left: -760px;
+  }
+  
+  
+  .navigation a {
+    font-size: 1.1rem;
+    color: #554d4a;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: .3s; 
+  }
+  
+  .navigation a:hover {
+  color: #eaccb6;
+  }
+  
+  
+
+
+.about-me {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background: #ffffff;
+    box-sizing: border-box;
+  }
+  
+  .about {
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+
+  .pic {
+    height: auto;
+      width: 100%; /* Gör bilden responsiv */
+      max-width: 450px; /* Begränsa maxbredd */
+      border-radius: 300px; /* Rundade hörn för en proffsig känsla */
+      margin-bottom: 0px; 
+      
+   
+    }
+  
+  
+  .text {
+    width: 540px;
+  }
+  
+  .text h2 {
+    font-size: 90px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .text h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  span {
+    color: #736659;
+  }
+
+
+  .text p {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+  
+  .link {
+    margin-top: 30px;
+  }
+  
+  .hire {
+    text-decoration: none;
+    font-family: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: #292725;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    transition: 0.5s;
+    border: 2px solid #473f35;
+  }
+  
+  .hire:hover:nth-child(1) {
+    color: #473f35;
+    background: transparent;
+  }
+  
+  .hire:hover {
+    background: transparent;
+  }
+
+  .link {
+    margin-top: 30px;
+  
+  }
+  
+  .hire {
+    text-decoration: none;
+    font-family: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: #292725;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    transition: 0.5s;
+    border: 2px solid #473f35;
+  }
+  
+  .hire:hover:nth-child(1) {
+    color: #473f35;
+    background: transparent;
+  }
+  
+  .hire:hover {
+    background: transparent;
+  }
+
+  .social-icons{
+    position:fixed ;
+    bottom: 50px;
+    right: 3%;
+  }
+  
+  .social-icons a {
+    text-align: left;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #292725;
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 37px;
+    border: 1px solid #ffffff;
+    outline: 2px solid #473f35;
+    transition: .3s;
+  }
+  
+  .social-icons a:hover {
+    transform: translateY(-5px);
+  }
+  
+  .social-icons a i {
+    color: #fff;
+  }
+
+
+
+
+
+  @media (max-width: 768px) {
+
+
+    header {
+      flex-direction: column;
+      padding: 15px 20px;
+      flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .logo {
+      margin-bottom: 10px;
+      font-size: 1.8rem; 
+    }
+    
+    .navigation {
+      margin: 0; 
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+     
+    }
+    
+    
+    .navigation a {
+      margin: 0 7px; 
+    
+    }
+    
+    .home {
+      
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url('Bild.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+    }
+  
+  
+    .content h2 {
+      font-size: 2rem;
+      
+    }
+  
+    .content h4 {
+      font-size: 1.2rem;
+    }
+    
+    .social-icons {
+      bottom: 20px;
+    }
+  
+  
+  h1, h2 {
+    margin: 0;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 10px;
+    color: #292725;
+  }
+  
+  
+  
+  
+  
+  .icon {
+    font-size: 2rem; 
+  }
+  .card {
+    font-size: 0.9rem; 
+  }
+  
+  h1 {
+    font-size: 1.5rem; 
+  }
+  
+  p {
+    font-size: 0.8rem; 
+  }
+  
+  
+  
+  
+  .about-me {
+    padding: 100px;  /* Minska padding för att utnyttja skärmens utrymme */
+    position: relative;
+    display:flex; 
+    justify-content: flex-end;
+    height: 130vh;
+    align-items: center;
+    min-height: 100%; 
+    min-width: 50cap;
+}
+  
+  .about {
+    flex-direction: column;  
+    text-align: center;  
+    
+  }
+  
+  .pic {
+    width: 100%;  
+    max-width: 300px;  
+    margin-bottom: 10px;  
+  }
+  
+  .text h2 {
+    font-size: 64px;  
+    margin-bottom: 10px;
+  }
+  
+  .text h5 {
+    font-size: 20px;  
+    margin-bottom: 20px;
+  }
+  
+  .text p {
+    font-size: 16px;  
+    line-height: 1.6;  
+    max-width: 60%;  
+    margin: 0 auto 20px;  
+  }
+  
+  .link .hire {
+    padding: 12px 24px;  
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px; 
+  }
+  .social-icons {
+    display: flex;             
+    justify-content: center;   
+    gap: 10px;                
+    padding: 70px;           
+    margin-bottom: 0px;
+    position:fixed; 
+    width: 100%;
+    height: 1px;
+    left: 1%;
+  }
+  }
