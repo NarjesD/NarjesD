@@ -209,6 +209,7 @@ header{
 
 .contact-section a:hover {
     color:  #eaccb6;
+    transition: .3s;
 }
 
 .contact-form {
