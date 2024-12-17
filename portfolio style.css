@@ -1,114 +1,97 @@
-@import url('https://fonts.googlepis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googlepis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
 
-header{
+header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 100px;
   display: flex;
+  padding: 20px 15px;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
 }
 
-header {
-  padding: 40px 50px;
-  flex-direction: row;
-    justify-content: space-between;
-}
-
-
-.logo{
-  font-size: 2rem;
+.logo {
+  width: 20%;
+  font-size: 1.3rem;
   font-weight: bolder;
-  color: #292725 ;
+  color: #292725;
   cursor: default;
 }
 
-
-
-.navigation {
-  margin-left: -760px;
-  
-  }
-
-
 .navigation a {
-  font-size: 1.1rem;
-  color: #554d4a;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 3px;
+  color: #ffffff;
   text-decoration: none;
-  margin-right: 15px;
- 
-  transition: .3s;
-  
+  transition: 0.3s;
+  flex-direction: row;
 }
 
 .navigation a:hover {
-color: #eaccb6;
+  color: #eaccb6;
 }
 
 .btn-hire {
   color: #fff;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 9px 12px;
   background: #292725;
-  border-radius: 5px;
+  border-radius: 4px;
   border: 2px solid #473f35;
-  font-weight: bold;
-  transition: .3s;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.3s;
+  margin: 1px;
+  grid-column: 3;
+  display: grid;
 }
 
 .btn-hire:hover {
   color: #473f35;
   background: transparent;
-
 }
 
-.home{
+.home {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url('Bild.jpeg');
+  background: url("Bild.jpeg");
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   padding: 30px 100px;
-
 }
 
 .content {
   font-weight: medium;
   max-width: 300px;
-  color: #292725;
+  color: #ffffff;
 }
 
-.content h2{
+.content h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
 .content h2 span {
   font-size: 2.6rem;
-  color: #e4e4e4;
+  color: #ffffff;
   padding: 10px 0 40px 0;
 }
 
-
-
 .content h4 {
   font-size: 1.5rem;
- 
 }
 
 .content p {
@@ -119,11 +102,11 @@ color: #eaccb6;
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
-  background: #292725 ;
+  background: #292725;
   border-radius: 5px;
   border: 2px solid #473f35;
   font-weight: bold;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .btn-group a:hover:nth-child(1) {
@@ -136,34 +119,33 @@ color: #eaccb6;
   background: transparent;
   margin-left: 10px;
   padding: 10px 20px;
-
 }
-
 
 .btn-group a:hover:nth-child(2) {
   color: #fff;
   background: #292725;
 }
 
-.social-icons{
-  position: absolute ;
-  bottom: 50px;
+.social-icons {
+  position: absolute;
+  bottom: 30px;
   right: 3%;
 }
 
 .social-icons a {
-  text-align: left;
+  text-align: center;
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   background: #292725;
   border-radius: 50%;
-  margin-right: 22px;
+  margin-right: 20px;
   text-align: center;
-  line-height: 37px;
-  border: 1px solid #ffffff;
+  line-height: 30px;
   outline: 2px solid #473f35;
-  transition: .3s;
+  transition: 0.3s;
+  text-align: center;
+  transform: translate(-100px);
 }
 
 .social-icons a:hover {
@@ -174,124 +156,83 @@ color: #eaccb6;
   color: #fff;
 }
 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-@media (max-width: 768px) {
-
-
+@media (min-width: 768px) {
   header {
-    flex-direction: column;
-    padding: 15px 20px;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .logo {
-    margin-bottom: 10px;
-    font-size: 1rem; 
-  }
-  
-  .navigation {
-    margin: 0; 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-   
-  }
-  
-  
-  .navigation a {
-    margin: 0 7px; 
-  
-  }
-  
-  .home {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
-    background: url('Bild.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
+    padding: 30px 30px;
+    justify-content: space-between;
     align-items: center;
+    z-index: 100;
   }
 
-
-  .content h2 {
+  .logo {
     font-size: 2rem;
-    
+    color: #292725;
+    cursor: default;
+    padding: 10px 10px;
   }
 
-  .content h4 {
-    font-size: 1.2rem;
+  .navigation a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #292725;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 10px 10px;
   }
-  
-  .social-icons {
-    bottom: 20px;
+
+  .navigation {
+    margin-left: -850px;
+    list-style: none;
+  }
+  .navigation a:hover {
+    color: #eaccb6;
   }
 
+  .btn-hire {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 20px;
+    background: #292725;
+    border-radius: 5px;
+    border: 2px solid #473f35;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.3s;
+    margin: 5px;
+    grid-column: 3;
+    display: grid;
+  }
 
-h1, h2 {
-  margin: 0;
-  
-}
+  .content {
+    font-weight: medium;
+    max-width: 300px;
+    color: #292725;
+  }
 
-h4{
-  color: #ffffff;
-}
+  .social-icons a {
+    text-align: left;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #292725;
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 37px;
+    outline: 2px solid #473f35;
+    transition: 0.3s;
+    transform: translate(30px);
+  }
+  .social-icons a:hover {
+    transform: translateY(-5px);
+  }
 
-p {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-top: 10px;
-  color: #ffffff;
-}
-
-
-
-
-
-.icon {
-  font-size: 2rem; 
-}
-.card {
-  font-size: 0.9rem; 
-}
-
-h1 {
-  font-size: 1.5rem;
-}
-
-p {
-  font-size: 0.8rem; 
-}
-
-
-
-
-
-.social-icons {
-  display: flex;             
-  justify-content: center;  
-  gap: 10px;                
-  padding: -150px;           
-  margin-bottom: 50px;
-  position:fixed; 
-  width: 100%;
-  height: 1px;
-  left: 0%;
-}
+  .social-icons a i {
+    color: #fff;
+  }
 }
