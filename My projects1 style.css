@@ -201,7 +201,7 @@ header {
     left: 0;
     width: 100%;
     display: flex;
-    padding: 25px 30px;
+    padding: 20px 30px;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -224,7 +224,6 @@ header {
   }
 
   .navigation {
-    margin-left: -850px;
     list-style: none;
   }
   .navigation a:hover {
