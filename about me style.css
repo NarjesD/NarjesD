@@ -13,14 +13,14 @@ header {
   left: 0;
   width: 100%;
   display: flex;
-  padding: 24px 15px;
+  padding: 20px 15px;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
 }
 
 .logo {
-  width: 25%;
+  width: 22%;
   font-size: 1.5rem;
   font-weight: bolder;
   color: #292725;
@@ -32,7 +32,7 @@ header {
   font-weight: 600;
   color: #554d4a;
   text-decoration: none;
-  margin-right: 15px;
+  margin-right: 5px;
   transition: 0.3s;
   text-align: center;
 }
@@ -155,37 +155,36 @@ span {
   transform: translate(-100px);
 }
 
-.social-icons a:hover {
-  transform: translateY(-5px);
-}
-
 .social-icons a i {
   color: #fff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1440px) {
   header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
-    padding: 30px 30px;
+    padding: 20px 50px;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    margin-left: 20px;
   }
 
   .logo {
+    width: 15%;
     font-size: 2rem;
     color: #292725;
     cursor: default;
     padding: 10px 10px;
+    margin-left: -40px;
   }
 
   .navigation a {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     color: #292725;
     text-decoration: none;
     transition: 0.3s;
@@ -193,9 +192,7 @@ span {
   }
 
   .navigation {
-    margin-left: -1050px;
     list-style: none;
-    
   }
   .navigation a:hover {
     color: #eaccb6;
@@ -215,64 +212,85 @@ span {
     grid-column: 3;
     display: grid;
   }
-
   .about-me {
-    width: 150%;
+    width: 100%;
     min-height: 100vh;
-    padding: 100px;
+    padding: 140px 20px;
     background: #ffffff;
     box-sizing: border-box;
+    margin-left: 30px;
+    position: relative;
   }
 
   .about {
     width: 100%;
-    max-width: 85%;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 50px auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
-
   .pic {
     position: fixed;
     height: auto;
     width: 100%; /* Gör bilden responsiv */
-    max-width: 360px; /* Begränsa maxbredd */
-    border-radius: 300px; /* Rundade hörn för en proffsig känsla */
-    margin-top: 120px;
+    max-width: 300px; /* Begränsa maxbredd */
+    margin-top: 210px;
     align-items: center;
-    margin-left: -1300px;
-    margin-bottom: 0px;
-    top: 70px; /* Flyttar bilden ner 50px */
+  }
+  .pic {
+    /* För max-width 1440px */
+    position: fixed;
+    height: auto;
+    width: 100%; /* Gör bilden responsiv */
+    max-width: 320px; /* Begränsa maxbredd */
+    margin-top: 340px;
+    margin-left: -470px;
+  }
+  .text h2 {
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    font-size: 68px;
+    font-weight: bold;
+    margin-top: 140px;
+    padding: -150px;
+  }
+  .text h2 {
+    /* För max-width 1440px */
+    position: fixed;
+    font-size: 68px;
+    font-weight: bold;
+    margin-top: -100px;
+    margin-left: 250px;
+    padding: -150px;
   }
 
-  .text h2 {
-    position: fixed;
-    font-size: 100px;
-    font-weight: 900;
-    margin-top: -10px;
-    padding: 100px 0px;
-    transform: translate(-110px);
-  }
   .text h5 {
+    /* För max-width 1440px */
     position: fixed;
-    padding: 280px 10px;
-    font-size: 1.5rem;
+    padding: 110px 98px;
+    font-size: 1.2rem;
     font-weight: bold;
-    margin-top: -70px;
-    text-align: center;
-    transform: translate(-120px);
+    margin-left: 200px;
   }
+
   .text p {
     position: fixed;
     font-size: 16px;
-    padding: 330px 40px;
-    line-height: 25px;
-    letter-spacing: 1px;
-    margin-top: -70px;
-    transform: translate(-130px);
+    padding: 370px 150px;
+    margin-left: -120px;
   }
+  .text p {
+    /* För max-width 1440px */
+    position: fixed;
+    font-size: 16px;
+    padding: 160px 100px;
+    margin-left: 180px;
+  }
+
   .social-icons a {
+    text-align: left;
     display: inline-block;
     width: 35px;
     height: 35px;
@@ -283,11 +301,9 @@ span {
     line-height: 37px;
     outline: 2px solid #473f35;
     transition: 0.3s;
-    transform: translate(30px);
+    transform: translate(-5px);
   }
-  .social-icons a:hover {
-    transform: translateY(-5px);
-  }
+
   .social-icons a i {
     color: #fff;
   }
