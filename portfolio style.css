@@ -163,7 +163,7 @@ header {
     left: 0;
     width: 100%;
     display: flex;
-    padding: 30px 30px;
+    padding: 20px 30px;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -178,15 +178,14 @@ header {
 
   .navigation a {
     font-size: 18px;
-    font-weight: 500;
-    color: #292725;
+    font-weight: 600;
+    color: #ffffff;
     text-decoration: none;
     transition: 0.3s;
     padding: 10px 10px;
   }
 
   .navigation {
-    margin-left: -850px;
     list-style: none;
   }
   .navigation a:hover {
